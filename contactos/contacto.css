@@ -1,0 +1,14 @@
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.row {
+    gap: 20px;
+}
+.navbar-custom {
+    background-color: #3e8fd8;
+}
+
