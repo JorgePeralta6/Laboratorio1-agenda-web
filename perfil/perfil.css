@@ -19,7 +19,7 @@ body{
     top:0;
     width:4px;
     height:100%;
-    background-color:#E1BEE7;
+    background-color:#bee4e7;
     transform:scaleY(1);
     transition:all 0.5s;
     transform-origin: bottom

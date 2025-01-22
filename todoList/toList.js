@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function renderTodos() {
       list.innerHTML = "";
-      const priorityOrder = ["Urgente", "No urgente", "Puede esperar"];
+      const priorityOrder = ["Alta Prioridad", "Prioridad Normal", "Baja Prioridad"];
       todos.sort(
         (a, b) => priorityOrder.indexOf(a.priority) - priorityOrder.indexOf(b.priority)
       );
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
           editTextInput.value = todo.text;
 
           const editPrioritySelect = document.createElement("select");
-          const options = ["Urgente", "No urgente", "Puede esperar"];
+          const options = ["Alta Prioridad", "Prioridad Normal", "Baja Prioridad"];
           options.forEach((optionValue) => {
             const option = document.createElement("option");
             option.value = optionValue;
