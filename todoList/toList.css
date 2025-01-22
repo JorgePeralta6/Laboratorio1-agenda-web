@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(../assets/image/fondoTo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+    padding: 25px;
+    min-width: 250px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+}
+
+.button-delete{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.editar-boton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.regresar{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #31b0fa;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.confirmar-boton {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+
+  .cancelar-boton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+
+  ul{
+    color: white;
+  }
