@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <section class="text-center">
         <div class="bg-image">
@@ -20,6 +22,15 @@
                         <div class="col-lg-8">
                             <h2 class="fw-bold mb-5">Iniciar sesión</h2>
                             <form action="#" method="POST">
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="text" id="form3Example4" class="form-control" required
+                                        placeholder="Nombre de usuario" />
+                                    <label class="form-label" for="form3Example4">Nombre de usuario</label>
+                                    <div class="invalid-feedback">
+                                        Por favor, rellena este campo.
+                                    </div>
+                                </div>
+
                                 <div data-mdb-input-init class="form-outline mb-4">
                                     <input type="email" id="form3Example3" class="form-control" required
                                         placeholder="Correo" />
@@ -45,4 +56,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
