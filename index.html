@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<form id="form">
     <section class="text-center">
         <div class="bg-image">
         </div>
@@ -23,27 +24,22 @@
                             <h2 class="fw-bold mb-5">Iniciar sesión</h2>
                             <form action="#" method="POST">
                                 <div data-mdb-input-init class="form-outline mb-4">
-                                    <input type="text" id="form3Example4" class="form-control" required
-                                        placeholder="Nombre de usuario" />
-                                    <label class="form-label" for="form3Example4">Nombre de usuario</label>
+                                    <input type="text" id="name" class="form-control form-control" name="name" required placeholder="Nombre" />
+                                    <label for="name">Nombre</label>
                                     <div class="invalid-feedback">
                                         Por favor, rellena este campo.
                                     </div>
                                 </div>
 
                                 <div data-mdb-input-init class="form-outline mb-4">
-                                    <input type="email" id="form3Example3" class="form-control" required
-                                        placeholder="Correo" />
+                                    <input type="text" id="correo" class="form-control" required placeholder="Correo" />
                                     <label class="form-label" for="form3Example3">Correo</label>
                                 </div>
                                 <div data-mdb-input-init class="form-outline mb-4">
-                                    <input type="password" id="form3Example4" class="form-control" required
-                                        placeholder="Contraseña" />
+                                    <input type="password" id="password" class="form-control" required placeholder="Contraseña" name="password" />
                                     <label class="form-label" for="form3Example4">Contraseña</label>
                                 </div>
-                                <a href="./contactos/contacto.html" class="btn btn-primary btn-block mb-4">
-                                    Iniciar sesión
-                                </a>
+                                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4" type="submit">Iniciar sesión</button>
                             </form>
                         </div>
                     </div>
@@ -51,10 +47,27 @@
             </div>
         </div>
     </section>
+</form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const correo = document.getElementById("correo").value;
+            const password = document.getElementById("password").value;
+
+            localStorage.setItem("name", name);
+            localStorage.setItem("correo", correo);
+            localStorage.setItem("password", password);
+
+            window.location.href = "./contactos/contacto.html";
+        });
+    </script>
 </body>
 
 </html>

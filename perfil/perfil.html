@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../perfil/perfil.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-7">
+                <div class="card p-3 py-4">
+                    <div class="text-center">
+                        <img src="../assets/image/icono.png" width="100" class="rounded-circle" alt="Profile Picture">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h5 class="mb-1" id="output2"></h5>
+                        <p class="mb-0" id="output"></p>
+                        <div class="px-4 mt-1">
+                            <p id="profileDescription">Telefono: 4788-8041 </p>
+                            <p id="profileDescription">Estudiante de kinal</p>
+                            <p id="profileDescription">Carnet: 2023478</p>
+                            <p id="profileDescription">Direccion: Guatemala, Amatitlan</p>
+                            <p id="profileDescription">Contraseña Guardada: <span id="output3"></span></p>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn btn-outline-primary px-4" onclick="window.history.back()">Regresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const name = localStorage.getItem("name");
+        const correo = localStorage.getItem("correo");
+        const password = localStorage.getItem("password");
+
+        document.getElementById("output").innerHTML = `${correo}`;
+        document.getElementById("output2").innerHTML = `${name}`;
+        document.getElementById("output3").innerHTML = `${password}`;
+    </script>
+</body>
+
+</html>
